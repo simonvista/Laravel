@@ -15,7 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/pizzas', function () {
-    return view('pizzas');
+    // Normally, get data from DB.
+    // pass data to view
+    $pizza=[
+        'type'=>'hawaiin',
+        'base'=>'cheesy crust',
+        'price'=>10
+    ];
+    return view('pizzas',$pizza);
+    // return view('pizzas',['type'=>'hawaiin','base'=>'cheesy crust']);
     // return 'pizzas';
     // return ["name"=>"veg pizzas",'base'=>'classic'];
 });
