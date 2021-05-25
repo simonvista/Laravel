@@ -71,6 +71,20 @@
                     Pizzas List
                 </div>
                 <p>type: {{ $type }} - base: {{ $base }} - price: {{ $price }}</p>
+                @if ($price>15)
+                    <p>expensive pizza</p>
+                @elseif ($price<5)
+                    <p>cheap pizza</p>
+                @else
+                    <p>fair pizza</p>
+                @endif
+                @unless ($base=='cheesy  crust')
+                    <p>cheesy crust is sold out</p>
+                @endunless
+                @php
+                    $name='shaun';
+                    echo $name;
+                @endphp
             </div>
         </div>
     </body>
