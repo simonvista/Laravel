@@ -20,6 +20,8 @@
         <div class="title m-b-md">            
             The North's Best Pizzas
         </div>
+        {{-- consume session data sent from create form --}}
+        <p class="msg">{{ session('msg') }}</p>
         <a href="/pizzas/create">Order a Pizza</a>        
     </div>
 </div>
