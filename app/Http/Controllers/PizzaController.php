@@ -17,7 +17,9 @@ class PizzaController extends Controller
         return view('pizzas.index',['pizzas'=>$pizzas]);        
     }
     public function show($id){
-        return view('pizzas.show',['id'=>$id]);
+        $pizza=Pizza::findOrFail($id);
+        // $pizza=Pizza::find($id);
+        return view('pizzas.show',['pizza'=>$pizza]);
     }
     public function create(){
         return view('pizzas.create');
