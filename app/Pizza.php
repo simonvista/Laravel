@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pizza extends Model
 {
-    // leave blanc
-    
+    // toppings will be saved as json to DB, topping will be retrieved as array from DB.
+    protected $casts=[
+        'toppings'=>'array'
+    ];
 }

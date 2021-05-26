@@ -33,6 +33,8 @@ class PizzaController extends Controller
         $pizza->type=request('type');
         $pizza->base=request('base');
         // error_log($pizza); // {"name":"as","type":"margherita","base":"cheesy crust"}
+        // return request('toppings'); // ["peppers","garlics","olives"] -> array rather than json -> setting in Pizza model
+        $pizza->toppings=request('toppings');
         $pizza->save();
         return redirect('/')->with('msg','Thanks for ordering'); // send session data to '/'
     }
