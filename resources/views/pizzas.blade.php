@@ -6,7 +6,7 @@
         <div class="title m-b-md">
             Pizzas List
         </div>
-        
+        <p>{{ $name }} - {{ $age }}</p>
         {{-- @for ($i=0;$i<5;$i++)
             <p>$i= {{ $i }}</p>
         @endfor --}}
