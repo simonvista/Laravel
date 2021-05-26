@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/pizzas', 'PizzaController@index');
-// /create must be above /{id}
+// /create must be above /{id} in order to get correct view by GET method
 Route::get('/pizzas/create', 'PizzaController@create');
 Route::get('/pizzas/{id}', 'PizzaController@show');
