@@ -3,6 +3,8 @@
 <div class="wrapper create-pizza">
     <h1>Create New Pizza</h1>
     <form action="/pizzas" method="POST">
+        {{-- prvent 419 page expired error --}}
+        @csrf
         <label for="name">name:</label>
         <input type="text" name="name" id="name">
         <label for="type">type:</label>
