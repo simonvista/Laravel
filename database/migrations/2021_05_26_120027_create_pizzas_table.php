@@ -19,6 +19,8 @@ class CreatePizzasTable extends Migration
             $table->string('type');
             $table->string('base');
             $table->string('name');
+            // add column will lose saved data
+            // $table->integer('price');
         });
     }
 
