@@ -1,4 +1,5 @@
-@extends('layouts.layout')
+@extends('layouts.app')
+{{-- @extends('layouts.layout') --}}
 @section('content')
 <div class="wrapper create-pizza">
     <h1>Create New Pizza</h1>

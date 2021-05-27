@@ -1,4 +1,5 @@
-@extends('layouts.layout')
+@extends('layouts.app')
+{{-- @extends('layouts.layout') --}}
 @section('content')
 <div class="wrapper pizza-details">
     {{-- {{ $pizza }} // return all info about single Pizza obj --}}
