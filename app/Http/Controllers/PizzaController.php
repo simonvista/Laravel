@@ -8,6 +8,10 @@ use App\Pizza;
 
 class PizzaController extends Controller
 {
+    // Method 2: adding 'auth' middleware to controller will applies to each action automatically
+    /* public function __construct(){
+        $this->middleware('auth');
+    } */
     public function index(){
         // $pizzas=Pizza::all();
         // $pizzas=Pizza::orderBy('name','desc')->get();
